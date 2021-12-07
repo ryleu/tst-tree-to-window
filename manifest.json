@@ -1,0 +1,27 @@
+{
+
+  "description": "Adds a keybind to move the current focused tree to a new window.",
+  "manifest_version": 2,
+  "name": "TST Tree to Window",
+  "version": "1.0",
+  "homepage_url": "https://github.com/ryleu",
+  "icons": {
+    "48": "icons/tst-move-tree-keybind-48.png"
+  },
+  "commands": {
+  	"tstMoveTreeToNewWindow": {
+  		"suggested_key": {
+  			"default": "Shift+Alt+N"
+  		},
+  		"description": "Move focused window to new tab."
+  	}
+  },
+
+  "background": {
+    "scripts": ["tst-move-tree-keybind.js"]
+  },
+
+  "permissions": [
+  	"tabs"
+  ]
+}
